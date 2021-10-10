@@ -20,21 +20,23 @@ public class GhostDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float midAngle = Vector3.Angle(Vector3.forward, player.transform.forward);
+        float midAngle = player.transform.eulerAngles.y;
         
-        float startAngle = 360 / (0.5f * detectionConeSize) - midAngle;
+        float startAngle = midAngle - 0.5f * detectionConeSize;
+        startAngle = startAngle < 0 ? startAngle + 360 : startAngle;
         // calculate endAngle
-        float endAngle = 360 / (0.5f * detectionConeSize) + midAngle;
+        float endAngle = midAngle + 0.5f * detectionConeSize;
+        endAngle = endAngle > 360 ? endAngle - 360 : endAngle;
         
-        Debug.Log(midAngle);
+        //Debug.Log($"Start: {startAngle}, \n Mid: {midAngle}, \n End: {endAngle}");
         
         foreach (var ghost in ghostList)
         {
-            if (checkDetection(ghost, startAngle, endAngle)) Destroy(ghost);
+            if (CheckDetection(ghost, startAngle, midAngle, endAngle)) Destroy(ghost);
         }
     }
     
-    private bool checkDetection(GameObject ghost, float startAngle, float endAngle)
+    private bool CheckDetection(GameObject ghost, float startAngle, float midAngle, float endAngle)
     {
         float x = ghost.transform.position.x;
         float y = ghost.transform.position.z;
@@ -42,14 +44,14 @@ public class GhostDetection : MonoBehaviour
         // Calculate polar co-ordinates
         float polarradius = Mathf.Sqrt(x * x + y * y);
                      
-        float Angle = Vector3.Angle(Vector3.forward, new Vector3(x,0,y));
-            //Mathf.Atan(y / x);
-     
+        float angle = Vector3.Angle(new Vector3(x, 0, y), Vector3.forward);
+        angle = x < 0 ? 360 - angle : angle;
+        
         // Check whether polarradius is less then
         // radius of circle or not and Angle is
         // between startAngle and endAngle or not
-        if (Angle >= startAngle 
-            && Angle <= endAngle
+        if (angle >= startAngle 
+            && angle <= endAngle
             && polarradius < detectionConeLength) return true;
         
         return false;
