@@ -140,8 +140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8386b95ddf17fb741b13f60ff9cc659c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghostList: []
   speed: 1
   audioClips:
   - {fileID: 8300000, guid: 467018f24a6d22b4ba0408aafcedcee4, type: 3}
   - {fileID: 8300000, guid: 84c34f5bb81f2314ba32af80eb341890, type: 3}
   - {fileID: 8300000, guid: 3b4137d4ba7ada245b05ffa5980048ef, type: 3}
+  Angle: 0

@@ -26,9 +26,8 @@ public class GhostSpawn : MonoBehaviour
         {
             var newGhost = Instantiate(ghostGameObject, transform);
 
-            Vector3 ghostPos = Random.onUnitSphere;
-            ghostPos.y = Mathf.Abs(ghostPos.y);
-            ghostPos *= spawnDistance;
+            Vector2 flatGhostPos = Random.insideUnitCircle.normalized * spawnDistance;
+            Vector3 ghostPos = new Vector3(flatGhostPos.x, Random.Range(-1f, 10f), flatGhostPos.y);
             newGhost.transform.position = ghostPos;
 
             newGhost.GetComponent<GhostBehaviour>().ghostList = ghostList;

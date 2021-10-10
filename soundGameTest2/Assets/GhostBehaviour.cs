@@ -25,8 +25,8 @@ public class GhostBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Angle = Vector3.Angle(Vector3.forward, new Vector3(transform.position.x,0,transform.position.z));
-        
+        Angle = Vector3.Angle(new Vector3(transform.position.x, 0, transform.position.z), Vector3.forward);
+        Angle = transform.position.x < 0 ? 360 - Angle : Angle;
         transform.position -= transform.position.normalized * (Time.deltaTime * speed);
     }
 
