@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghostGameObject: {fileID: 7379336696748400075, guid: 81a41e5a6a65b2846b9e08b80d6e18fd, type: 3}
-  waitTime: 1
+  waitTime: 1000
   spawnDistance: 10
 --- !u!4 &1911614932
 Transform:
@@ -416,5 +416,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionConeLength: 100
-  detectionConeSize: 25
+  detectionConeSize: 45
   player: {fileID: 848159166}
