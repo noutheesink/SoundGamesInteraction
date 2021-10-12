@@ -1,0 +1,305 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.9f1 (108be757e447) revision 1084391'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 15741 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Users\koenv\Documents\Unity Projecten\2020.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/koenv/Documents/School/wmyt/Microfoon
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60820
+Successfully changed project path to: C:/Users/koenv/Documents/School/wmyt/Microfoon
+C:/Users/koenv/Documents/School/wmyt/Microfoon
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 21.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.9f1 (108be757e447)
+[Subsystems] Discovering subsystems at path C:/Users/koenv/Documents/Unity Projecten/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/koenv/Documents/School/wmyt/Microfoon/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.6589
+Initialize mono
+Mono path[0] = 'C:/Users/koenv/Documents/Unity Projecten/2020.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/koenv/Documents/Unity Projecten/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/koenv/Documents/Unity Projecten/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/koenv/Documents/Unity Projecten/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001937 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 21.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.986 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000635 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.693 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1132 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.7 MB.
+System memory in use after: 57.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1576.
+Total: 1.679000 ms (FindLiveObjects: 0.171600 ms CreateObjectMapping: 0.047700 ms MarkObjects: 1.396100 ms  DeleteObjects: 0.061600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/FL_01_129BPM_Top Loop.wav
+  artifactKey: Guid(9ae8238750349c14ab6d0884b0c1ee8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FL_01_129BPM_Top Loop.wav using Guid(9ae8238750349c14ab6d0884b0c1ee8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b5ce42e8bc2fa7628f9c5adad167a1') in 0.082671 seconds
+  Import took 0.084762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/NewAudioMixer.mixer
+  artifactKey: Guid(b4d35f432ce13a0429180494ad15ac30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewAudioMixer.mixer using Guid(b4d35f432ce13a0429180494ad15ac30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98163f019cfa87f3ac5d8f5bfaae31a') in 0.011560 seconds
+  Import took 0.013560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.378519 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(0d6c615dce5c5104e977a73ef0c530d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(0d6c615dce5c5104e977a73ef0c530d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b71902413cf3080a209da8d8481600') in 0.006791 seconds
+  Import took 0.008730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005345 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(0d6c615dce5c5104e977a73ef0c530d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(0d6c615dce5c5104e977a73ef0c530d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b71902413cf3080a209da8d8481600') in 0.002707 seconds
+  Import took 0.005039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.852477 seconds.
+  path: Assets/Mic.cs
+  artifactKey: Guid(64b7d7bbe99dc424caa31c1b7cd9518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mic.cs using Guid(64b7d7bbe99dc424caa31c1b7cd9518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4395acdc6f566b460815bb15f7e0d83a') in 0.009336 seconds
+  Import took 0.011876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001530 seconds.
+  path: Assets/Mic.cs
+  artifactKey: Guid(64b7d7bbe99dc424caa31c1b7cd9518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mic.cs using Guid(64b7d7bbe99dc424caa31c1b7cd9518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4395acdc6f566b460815bb15f7e0d83a') in 0.002497 seconds
+  Import took 0.004233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.856726 seconds.
+  path: Assets/MicControl3
+  artifactKey: Guid(2ae98b529394639408afacc4a93ccb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3 using Guid(2ae98b529394639408afacc4a93ccb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e20b26e0aee4520dee0b002b58409b5') in 0.007665 seconds
+  Import took 0.010463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048930 seconds.
+  path: Assets/MicControl3/MicControllerC.prefab
+  artifactKey: Guid(b7ec442eb17941144aa725fa5ed57ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/MicControllerC.prefab using Guid(b7ec442eb17941144aa725fa5ed57ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39224a36285ae3e042e4ccd6ab6bdb4') in 0.015223 seconds
+  Import took 0.017950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.295400 seconds.
+  path: Assets/MicControl3/Resources
+  artifactKey: Guid(8d875544b1d2fb34a9a6191524e6faa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Resources using Guid(8d875544b1d2fb34a9a6191524e6faa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0186bd1aa628a571fe36bb9f5d4ec4') in 0.007173 seconds
+  Import took 0.008902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054539 seconds.
+  path: Assets/MicControl3/Resources/MicControl3Mixer.mixer
+  artifactKey: Guid(6206e92b330044540b49a4ef68c1f9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Resources/MicControl3Mixer.mixer using Guid(6206e92b330044540b49a4ef68c1f9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa770aea41d656cf0b29e55d389eca36') in 0.007314 seconds
+  Import took 0.009212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/MicControl3/Resources/MicControlGizmo.tif
+  artifactKey: Guid(9503e6f331c2bc34da39e012e403fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Resources/MicControlGizmo.tif using Guid(9503e6f331c2bc34da39e012e403fb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4b0171f92a3352b8f3409e3dcbd650') in 0.028071 seconds
+  Import took 0.029794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.006044 seconds.
+  path: Assets/MicControl3/Source
+  artifactKey: Guid(2b5d9fdd25f94c044823c1a5b86d86e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Source using Guid(2b5d9fdd25f94c044823c1a5b86d86e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e006b3443f33b47b0aaad37a1984a2bb') in 0.006632 seconds
+  Import took 0.008794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.916338 seconds.
+  path: Assets/MicControl3/Reference
+  artifactKey: Guid(9404b84a5a41b9e45ba5281c6748258a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Reference using Guid(9404b84a5a41b9e45ba5281c6748258a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a778ee1697c28dd49842950f99990927') in 0.007499 seconds
+  Import took 0.009860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.487556 seconds.
+  path: Assets/MicControl3/Reference/Call_Loudness.cs
+  artifactKey: Guid(498b520cf1a74b349b0385acba451f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Reference/Call_Loudness.cs using Guid(498b520cf1a74b349b0385acba451f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a8e3dd434bb904e412f30cea10044b') in 0.010984 seconds
+  Import took 0.012951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.696917 seconds.
+  path: Assets/MicControl3/Reference/timeScale_Loudness.cs
+  artifactKey: Guid(e14734f27705fa74cbcd21bb52c40547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Reference/timeScale_Loudness.cs using Guid(e14734f27705fa74cbcd21bb52c40547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91fe9ab08b64f82e745ed09ef410b02') in 0.008178 seconds
+  Import took 0.010299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001646 seconds.
+  path: Assets/MicControl3/Reference/timeScale_Loudness.cs
+  artifactKey: Guid(e14734f27705fa74cbcd21bb52c40547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Reference/timeScale_Loudness.cs using Guid(e14734f27705fa74cbcd21bb52c40547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91fe9ab08b64f82e745ed09ef410b02') in 0.002940 seconds
+  Import took 0.004696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 934.201513 seconds.
+  path: Assets/MicControl3/Reference/Call_SpectrumData.cs
+  artifactKey: Guid(bb3789f392c4dae47ad1a4a37eab038c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MicControl3/Reference/Call_SpectrumData.cs using Guid(bb3789f392c4dae47ad1a4a37eab038c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636b9fa284eee8f9d41fe1f9a2630dc9') in 0.007915 seconds
+  Import took 0.010032 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000686 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.670 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1127 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.8 MB.
+System memory in use after: 60.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1589.
+Total: 1.470200 ms (FindLiveObjects: 0.151000 ms CreateObjectMapping: 0.024200 ms MarkObjects: 1.277500 ms  DeleteObjects: 0.016100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000641 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.661 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1127 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.8 MB.
+System memory in use after: 60.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1592.
+Total: 1.597900 ms (FindLiveObjects: 0.153800 ms CreateObjectMapping: 0.026000 ms MarkObjects: 1.403700 ms  DeleteObjects: 0.012900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.712 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1127 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.8 MB.
+System memory in use after: 60.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1595.
+Total: 1.628600 ms (FindLiveObjects: 0.142400 ms CreateObjectMapping: 0.026600 ms MarkObjects: 1.444800 ms  DeleteObjects: 0.013300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000643 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.638 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1127 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.8 MB.
+System memory in use after: 60.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1598.
+Total: 1.986300 ms (FindLiveObjects: 0.135900 ms CreateObjectMapping: 0.025900 ms MarkObjects: 1.810300 ms  DeleteObjects: 0.013000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000693 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.665 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1127 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.8 MB.
+System memory in use after: 60.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1601.
+Total: 1.758800 ms (FindLiveObjects: 0.189100 ms CreateObjectMapping: 0.047700 ms MarkObjects: 1.507300 ms  DeleteObjects: 0.013200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
