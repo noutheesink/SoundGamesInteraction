@@ -12,8 +12,11 @@ public class InputSpectrumData : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        for (int i = 0; i < spectrumData.Length; i++)
+        {
+            spectrumData[i] = spectrumData[i] < 10 ? 0 : spectrumData[i];
+        }
     }
 }

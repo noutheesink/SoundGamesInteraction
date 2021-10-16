@@ -48,14 +48,15 @@ MonoBehaviour:
   ghostList: []
   speed: 1
   audioClips:
-  - {fileID: 8300000, guid: 7c8cc6f13ba1b2e48adf3b6559224957, type: 3}
   - {fileID: 8300000, guid: 96b12962927befa42b7fc477c222bce0, type: 3}
   - {fileID: 8300000, guid: 49589f7d515e7fc49a38f717fbe0a2cc, type: 3}
+  - {fileID: 8300000, guid: 7c8cc6f13ba1b2e48adf3b6559224957, type: 3}
   singingSource: {fileID: -142760618857115435}
   dyingSource: {fileID: -8136463698629246660}
   Angle: 0
   detected: 0
   micInput: {fileID: 0}
+  killSensitivity: 7
 --- !u!82 &-142760618857115435
 AudioSource:
   m_ObjectHideFlags: 0
