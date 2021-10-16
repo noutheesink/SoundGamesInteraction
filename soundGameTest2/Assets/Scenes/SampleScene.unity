@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c29357b6cdd384ba050226d8ea8227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableSpectrumData: 0
+  enableSpectrumData: 1
   useDefaultMic: 1
   pointer_ShowDeviceName: 1
   pointer_SetDeviceSlot: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
   pointer_advanced: 1
   pointer_spectrumDropdown: 0
   audioSource: {fileID: 0}
-  amountSamples: 2048
+  amountSamples: 512
   loudness: 0
   rawInput: 0
   spectrumData: []
@@ -602,6 +602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363068742}
   - component: {fileID: 1363068741}
+  - component: {fileID: 1363068743}
   m_Layer: 0
   m_Name: MicInput
   m_TagString: GameController
@@ -638,6 +639,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363068743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363068740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5c3aa318637f74db24dd2789d9f5a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spectrumData: []
 --- !u!1 &1786301044
 GameObject:
   m_ObjectHideFlags: 0
