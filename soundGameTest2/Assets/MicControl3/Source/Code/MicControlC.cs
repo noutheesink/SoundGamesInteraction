@@ -190,7 +190,9 @@ namespace AS
                 //stuur naar micloudness object
 
                 GameObject.FindWithTag("GameController").GetComponent<MicLoudness>().micLoudness = loudness;
-                //GameObject.FindWithTag("inputText").GetComponent<Text>().text = loudness.ToString("#.00");
+
+                GameObject.FindWithTag("inputText").GetComponent<Text>().text = loudness.ToString("#.00");
+                GameObject.FindWithTag("GameController").GetComponent<InputSpectrumData>().spectrumData = spectrumData;
             }
 
             public float GetDataStream ()
@@ -227,7 +229,9 @@ namespace AS
                     }
 
                 }
+                
                 return dataSpectrum;
+
 
             }
 
