@@ -9,6 +9,8 @@ public class GhostSpawn : MonoBehaviour
     public float waitTime = 2f;
     private float timeSinceLastGhost = 0;
 
+    public GameObject MicInput;
+    
     public float spawnDistance;
 
     private List<GameObject> ghostList;
@@ -31,6 +33,7 @@ public class GhostSpawn : MonoBehaviour
             newGhost.transform.position = ghostPos;
 
             newGhost.GetComponent<GhostBehaviour>().ghostList = ghostList;
+            newGhost.GetComponent<GhostBehaviour>().micInput = MicInput;
             ghostList.Add(newGhost);
             
             timeSinceLastGhost = waitTime;

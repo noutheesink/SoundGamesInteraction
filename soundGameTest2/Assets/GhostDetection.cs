@@ -39,7 +39,9 @@ public class GhostDetection : MonoBehaviour
         foreach (var ghost in ghostList)
         {
             var gaudio = ghost.GetComponent<AudioSource>();
-            if (CheckDetection(ghost, startAngle, midAngle, endAngle)) Destroy(ghost);
+            if (CheckDetection(ghost, startAngle, midAngle, endAngle))
+                ghost.GetComponent<GhostBehaviour>().detected = true;
+            else ghost.GetComponent<GhostBehaviour>().detected = false;
 
             if (CheckDetection(ghost, volumeStartAngle, midAngle, volumeEndAngle)) ghost.GetComponent<AudioSource>().volume = 1;
             else ghost.GetComponent<AudioSource>().volume = 0.5f;

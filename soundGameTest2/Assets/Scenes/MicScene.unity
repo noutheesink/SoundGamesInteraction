@@ -770,8 +770,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghostGameObject: {fileID: 7379336696748400075, guid: 81a41e5a6a65b2846b9e08b80d6e18fd, type: 3}
-  waitTime: 1000
-  spawnDistance: 10
+  waitTime: 8
+  MicInput: {fileID: 1363068740}
+  spawnDistance: 20
 --- !u!4 &1911614932
 Transform:
   m_ObjectHideFlags: 0
