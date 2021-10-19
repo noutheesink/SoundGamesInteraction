@@ -271,7 +271,7 @@ MonoBehaviour:
   bufferTime: 1
   freq: 0
   setFrequency: 44100
-  Mute: 1
+  Mute: 0
   debug: 0
   focused: 1
   Initialized: 0
@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1911614931
 MonoBehaviour:
   m_ObjectHideFlags: 0
