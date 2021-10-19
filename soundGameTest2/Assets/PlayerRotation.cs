@@ -26,13 +26,22 @@ public class PlayerRotation : MonoBehaviour
         else
         {
 
-            Quaternion gyroAttitude = m_Gyro.attitude * Quaternion.Euler(90, 0, 0);
-
-            Debug.DrawRay(Vector3.zero, transform.forward * 90, Color.green);
-
-            Quaternion gyroAttitudeTranslation = new Quaternion(gyroAttitude.x, 0, gyroAttitude.y, 0);
-
-            transform.rotation = gyroAttitudeTranslation;
+            // Quaternion gyroAttitude = m_Gyro.attitude;//* Quaternion.Euler(90, 0, 0);
+            //
+            // Debug.DrawRay(Vector3.zero, transform.forward * 90, Color.green);
+            //
+            // // Vector3 gyroEuler = gyroAttitude.eulerAngles;
+            // // Debug.Log(gyroEuler.y);
+            //
+            // //transform.rotation = Quaternion.Euler(new Vector3(0, gyroEuler.x,0));
+            //
+            // Quaternion gyroAttitudeTranslation = new Quaternion(0, gyroAttitude.y,0, gyroAttitude.w);
+            //     
+            //     //new Quaternion(gyroAttitude.x, 0, gyroAttitude.y, 0);
+            //
+            // transform.rotation = gyroAttitudeTranslation;
+            
+            transform.eulerAngles = new Vector3(0.0f, transform.eulerAngles.y - Input.gyro.rotationRateUnbiased.y * Time.deltaTime * Mathf.Rad2Deg, 0.0f);
         }
     }
     
