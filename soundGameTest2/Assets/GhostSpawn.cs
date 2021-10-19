@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GhostSpawn : MonoBehaviour
@@ -19,7 +20,16 @@ public class GhostSpawn : MonoBehaviour
     private List<GameObject> ghostList;
 
     private List<GhostType> ghostTypes;
+
+    private float playTime = 30;
     
+    private void Awake()
+    {
+        waitTime = PlayerPrefs.GetFloat("waitTime", 8);
+        spawnDistance = PlayerPrefs.GetFloat("spawnDistance", 20);
+        playTime = PlayerPrefs.GetFloat("nextGamePlayTime", 30);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +43,7 @@ public class GhostSpawn : MonoBehaviour
         List<GhostType> currentGhostTypes = new List<GhostType>();
         ghostList.ForEach(ghost => currentGhostTypes.Add((GhostType) ghost.GetComponent<GhostBehaviour>().ghostType));
         
-        if (timeSinceLastGhost <= 0 && ghostList.Count < 1)
+        if (timeSinceLastGhost <= 0 && ghostList.Count < 3)
         {
             var newGhost = Instantiate(ghostGameObject, transform);
 
@@ -54,10 +64,11 @@ public class GhostSpawn : MonoBehaviour
             ghostList.Add(newGhost);
             
             timeSinceLastGhost = waitTime;
-            
-            Debug.Log("new ghost type: " + newGhostBehaviour.ghostType);
         }
 
         timeSinceLastGhost -= Time.deltaTime;
+
+        playTime -= Time.deltaTime;
+        if (playTime <= 0) SceneManager.LoadScene("CutScene" + (PlayerPrefs.GetInt("currentScene", 0) + 1));
     }
 }

@@ -28,23 +28,29 @@ public class GhostDetection : MonoBehaviour
         float endAngle = midAngle + 0.5f * detectionConeSize;
         endAngle = endAngle > 360 ? endAngle - 360 : endAngle;
         
-        float volumeStartAngle = midAngle - detectionConeSize;
-        volumeStartAngle = volumeStartAngle < 0 ? volumeStartAngle + 360 : volumeStartAngle;
-        // calculate endAngle
-        float volumeEndAngle = midAngle + detectionConeSize;
-        volumeEndAngle = volumeEndAngle > 360 ? volumeEndAngle - 360 : volumeEndAngle;
+        // float volumeStartAngle = midAngle - detectionConeSize;
+        // volumeStartAngle = volumeStartAngle < 0 ? volumeStartAngle + 360 : volumeStartAngle;
+        // // calculate endAngle
+        // float volumeEndAngle = midAngle + detectionConeSize;
+        // volumeEndAngle = volumeEndAngle > 360 ? volumeEndAngle - 360 : volumeEndAngle;
         
         //Debug.Log($"Start: {startAngle}, \n Mid: {midAngle}, \n End: {endAngle}");
         
         foreach (var ghost in ghostList)
         {
-            var gaudio = ghost.GetComponent<AudioSource>();
             if (CheckDetection(ghost, startAngle, midAngle, endAngle))
+            {
                 ghost.GetComponent<GhostBehaviour>().detected = true;
-            else ghost.GetComponent<GhostBehaviour>().detected = false;
+                ghost.GetComponent<AudioSource>().volume = 1;
+            }
+            else
+            {
+                ghost.GetComponent<GhostBehaviour>().detected = false;
+                ghost.GetComponent<AudioSource>().volume = 0.5f;
+            }
 
-            if (CheckDetection(ghost, volumeStartAngle, midAngle, volumeEndAngle)) ghost.GetComponent<AudioSource>().volume = 1;
-            else ghost.GetComponent<AudioSource>().volume = 0.5f;
+            // if (CheckDetection(ghost, volumeStartAngle, midAngle, volumeEndAngle)) ghost.GetComponent<AudioSource>().volume = 1;
+            // else ghost.GetComponent<AudioSource>().volume = 0.5f;
         }
     }
     

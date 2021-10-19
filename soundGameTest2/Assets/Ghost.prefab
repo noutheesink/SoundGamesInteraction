@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8386b95ddf17fb741b13f60ff9cc659c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroy: 0
   ghostList: []
   speed: 1
   audioClips:
@@ -171,7 +172,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

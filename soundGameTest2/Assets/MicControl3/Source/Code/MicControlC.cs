@@ -191,7 +191,6 @@ namespace AS
 
                 GameObject.FindWithTag("GameController").GetComponent<MicLoudness>().micLoudness = loudness;
 
-                GameObject.FindWithTag("inputText").GetComponent<Text>().text = loudness.ToString("#.00");
                 GameObject.FindWithTag("GameController").GetComponent<InputSpectrumData>().spectrumData = spectrumData;
             }
 
