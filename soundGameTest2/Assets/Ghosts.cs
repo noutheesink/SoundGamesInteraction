@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ghosts : MonoBehaviour
 {
     public List<GameObject> ghostList;
+    public GhostType ghostTypes;
     
     // Start is called before the first frame update
     void Start()
@@ -17,4 +18,11 @@ public class Ghosts : MonoBehaviour
     {
         
     }
+}
+
+public enum GhostType
+{
+    Low = 0,
+    Mid = 20,
+    High = 40
 }
